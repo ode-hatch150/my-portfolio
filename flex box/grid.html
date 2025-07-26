@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Day 4 CSS Grid Practice</title>
+  <style>
+    /* Grid container banaya jisme grid layout set hai */
+    .grid-container {
+      display: grid;                      /* Grid activate karna */
+      grid-template-columns: 100px 100px 100px; /* 3 columns, har ek 100px wide */
+      grid-template-rows: 80px 80px;     /* 2 rows, har row 80px high */
+      gap: 10px;                         /* Rows aur columns ke darmiyan 10px gap */
+      padding: 20px;
+      background-color: #f0f8ff;
+      max-width: 350px;
+      margin: 40px auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    /* Grid ke andar jo items hain unka style */
+    .grid-container > div {
+      background-color: #4a90e2;          /* Blue color */
+      color: white;
+      font-size: 24px;
+      font-weight: bold;
+      display: flex;
+      justify-content: center;            /* Text horizontally center */
+      align-items: center;                /* Text vertically center */
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Grid container jisme 6 items hain -->
+  <div class="grid-container">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+  </div>
+
+</body>
+</html>

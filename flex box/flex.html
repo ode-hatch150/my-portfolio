@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Day 2 Flexbox Practice</title>
+  <style>
+    /* Flex container styling */
+    .flex-container {
+      display: flex;                   /* Flexbox start */
+      flex-direction: row;             /* Items line mein (row) */
+      justify-content: center;         /* Horizontal center alignment */
+      align-items: center;             /* Vertical center alignment */
+      height: 300px;                   /* Height set kiya taake vertical center dikhe */
+      background-color: #f0f0f0;      /* Light grey background */
+      border: 2px dashed #ccc;         /* Dashed border around container */
+    }
+
+    /* Flex items styling */
+    .flex-item {
+      background-color: #4CAF50;       /* Green background */
+      color: white;                    /* White text */
+      padding: 20px;                   /* Andar ki padding */
+      margin: 10px;                    /* Items ke darmiyan gap */
+      border-radius: 8px;              /* Rounded corners */
+      font-size: 18px;                 /* Text size */
+      text-align: center;              /* Text center align */
+      width: 100px;                   /* Width fix kiya */
+    }
+  </style>
+</head>
+<body>
+
+  <div class="flex-container">
+    <div class="flex-item">Box 1</div>
+    <div class="flex-item">Box 2</div>
+    <div class="flex-item">Box 3</div>
+  </div>
+
+</body>
+</html>

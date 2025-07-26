@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Flexbox Practice Summary</title>
+  <style>
+    /* Container for horizontal flexbox */
+    .flex-row {
+      display: flex;                   /* Flexbox start */
+      flex-direction: row;             /* Items horizontally arrange hon */
+      justify-content: center;         /* Items center mein horizontal */
+      align-items: center;             /* Items center mein vertical */
+      gap: 20px;                      /* Boxes ke darmiyan gap */
+      padding: 20px;
+      background-color: #f0f4f8;
+      border-radius: 12px;
+      margin-bottom: 40px;
+    }
+
+    /* Container for vertical flexbox */
+    .flex-column {
+      display: flex;
+      flex-direction: column;          /* Items vertical arrange hon */
+      justify-content: center;         /* Vertical center alignment */
+      align-items: center;             /* Horizontal center alignment */
+      gap: 20px;
+      padding: 20px;
+      background-color: #e6f0ff;
+      border-radius: 12px;
+    }
+
+    /* Common style for flex items */
+    .flex-item {
+      background-color: #007BFF;      /* Modern blue background */
+      color: white;
+      padding: 20px 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      font-size: 18px;
+      text-align: center;
+      min-width: 100px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Horizontal flex container -->
+  <div class="flex-row">
+    <div class="flex-item">Horizontal Box 1</div>
+    <div class="flex-item">Horizontal Box 2</div>
+    <div class="flex-item">Horizontal Box 3</div>
+  </div>
+
+  <!-- Vertical flex container -->
+  <div class="flex-column">
+    <div class="flex-item">Vertical Box 1</div>
+    <div class="flex-item">Vertical Box 2</div>
+    <div class="flex-item">Vertical Box 3</div>
+  </div>
+
+</body>
+</html>

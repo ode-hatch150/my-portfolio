@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Day 2 Flexbox Explained</title>
+  <style>
+    /* Yeh parent container hai jisme hum flexbox lagayenge */
+    .flex-container {
+      display: flex;               /* Flexbox activate karta hai */
+      flex-direction: row;         /* Items ko horizontally (row) arrange karta hai */
+      justify-content: center;     /* Items ko horizontally center karta hai */
+      align-items: center;         /* Items ko vertically center karta hai */
+      
+      height: 200px;               /* Container ki height, vertical alignment dikhane ke liye */
+      border: 2px solid #aaa;      /* Container ke charo taraf ek border */
+      background-color: #f9f9f9;  /* Container ka halka background color */
+    }
+
+    /* Yeh andar ke boxes hain, jinhe hum flex items kehte hain */
+    .flex-item {
+      background-color: #4CAF50;  /* Har box ka green background */
+      color: white;               /* Text white color ka */
+      padding: 20px;              /* Box ke andar text ke charo taraf gap */
+      margin: 10px;               /* Boxes ke darmiyan gap */
+      border-radius: 8px;         /* Boxes ke corners rounded */
+      width: 100px;               /* Har box ki fixed width */
+      text-align: center;         /* Text center align */
+      font-size: 18px;            /* Text size */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Yeh flex container jisme flex items rakhe hain -->
+  <div class="flex-container">
+    <div class="flex-item">Box 1</div>
+    <div class="flex-item">Box 2</div>
+    <div class="flex-item">Box 3</div>
+  </div>
+
+</body>
+</html>
